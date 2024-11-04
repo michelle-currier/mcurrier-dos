@@ -144,7 +144,7 @@ export default function HeroHome() {
                 </span>
                 <br />
                 <span className="animate-[code-3_10s_infinite]">
-                  - Local: http://localhost:3001
+                  - Local: http://localhost:3000
                 </span>{" "}
                 <br />
                 <span className="animate-[code-4_10s_infinite]">
