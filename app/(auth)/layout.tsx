@@ -87,7 +87,10 @@ export default function AuthLayout({
                   <br />
                   <span className="animate-[code-6_15s_infinite] text-gray-200">
                     ✓ Ready in 1515ms
-                    <br />✓ Compiled in 241ms (551 modules)
+                  </span>
+                  <br />
+                  <span className="animate-[code-7_15s_infinite] text-gray-200">
+                    ✓ Compiled in 241ms (551 modules)
                   </span>
                 </div>
               </div>

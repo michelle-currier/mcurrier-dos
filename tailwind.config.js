@@ -59,8 +59,14 @@ module.exports = {
           "100%": { opacity: 0 },
         },
         "code-6": {
-          "81.25%": { opacity: 0 },
+          "72%": { opacity: 0 },
           "83.75%": { opacity: 1 },
+          "97.5%": { opacity: 1 },
+          "100%": { opacity: 0 },
+        },
+        "code-7": {
+          "80%": { opacity: 0 },
+          "84%": { opacity: 1 },
           "97.5%": { opacity: 1 },
           "100%": { opacity: 0 },
         },
