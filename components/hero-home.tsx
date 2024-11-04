@@ -67,7 +67,7 @@ export default function HeroHome() {
             </div>
 
             <h1
-              className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-6xl"
+              className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-6xl text-indigo-800"
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
@@ -81,20 +81,20 @@ export default function HeroHome() {
                 data-aos-delay={300}
               >
                 Simple is a modern website builder powered by:{" "}
-                <i>
+                <i className="text-indigo-800">
                   NextJS - (framework), Tailwind - (styles template), AOS -
                   (animations on scroll), SendGrid - (emails/contact), Vercel -
                   (deployment).
                 </i>
               </p>
-              <p
-                className="mb-8 text-lg text-gray-700"
+              <h3
+                className="mb-8 text-3xl text-gray-700"
                 data-aos="zoom-y-out"
                 data-aos-delay={450}
               >
-                Consulting with m. currier designs changes how companies create
-                user interfaces together.
-              </p>
+                Collaborating with m. currier designs changes how companies
+                create intiuitive user interfaces together.
+              </h3>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
                 <div
                   className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center"
@@ -131,20 +131,22 @@ export default function HeroHome() {
             <div className="relative aspect-video rounded-2xl bg-gray-900 px-5 py-3 shadow-xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,theme(colors.slate.300/.8),transparent)1]">
               <div className="relative mb-8 flex items-center justify-between before:block before:h-[9px] before:w-[41px] before:bg-[length:16px_9px] before:[background-image:radial-gradient(circle_at_4.5px_4.5px,_theme(colors.gray.600)_4.5px,_transparent_0)] after:w-[41px]">
                 <span className="text-[13px] font-medium text-white">
-                  cruip.com
+                  mcurrier.com
                 </span>
               </div>
               <div className="font-mono text-gray-500 [&_span]:opacity-0">
                 <span className="animate-[code-1_10s_infinite] text-gray-200">
-                  npm login
+                  npm run dev
                 </span>{" "}
+                <br />
                 <span className="animate-[code-2_10s_infinite]">
-                  --registry=https://npm.pkg.github.com
+                  ▲ Next.js 14.2.16
                 </span>
                 <br />
                 <span className="animate-[code-3_10s_infinite]">
-                  --scope=@phanatic
+                  - Local: http://localhost:3001
                 </span>{" "}
+                <br />
                 <span className="animate-[code-4_10s_infinite]">
                   Successfully logged-in.
                 </span>

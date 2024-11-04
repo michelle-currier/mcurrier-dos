@@ -9,7 +9,8 @@ export default function Logo() {
       className="inline-flex text-lg items-center"
       aria-label="m. currier designs"
     >
-      <Image src={Img} className="mr-2"></Image> currier designs
+      <Image src={Img} className="mr-2"></Image>{" "}
+      <p className="text-indigo-800 mt-1">currier designs</p>
     </Link>
   );
 }
