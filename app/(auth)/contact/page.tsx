@@ -118,7 +118,7 @@ export default function Contact() {
         </div>
         <button
           type="submit"
-          className="w-full bg-zinc-900 dark:bg-white text-white dark:text-black p-3 rounded-md font-bold hover:bg-zinc-700 dark:hover:bg-zinc-200 transition"
+          className="w-full bg-zinc-900 text-indigo-200 p-3 rounded-md font-bold hover:bg-zinc-700 transition"
         >
           Send Message
         </button>
@@ -139,7 +139,7 @@ export default function Contact() {
           Or, send us an email directly at{" "}
           <a
             href="mailto:mcurrierdesigns@gmail.com"
-            className="text-blue-600 dark:text-teal-300 underline"
+            className="text-blue-600 dark:text-teal-800 underline"
           >
             mcurrierdesigns@gmail.com
           </a>
