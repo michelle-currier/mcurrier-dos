@@ -47,9 +47,9 @@ const RepoTable: FC<RepoTableProps> = ({ rows, headers }) => {
         <table className="w-full text-left border-collapse">
           <thead>
             <tr className="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-              <th className="py-3 px-6 text-center"></th>
+              <th className="py-3 px-4 text-center"></th>
               {headers.map((header) => (
-                <th key={header.key} className="py-3 px-6 font-semibold">
+                <th key={header.key} className="py-3 pl-4 pr-0 font-semibold">
                   {header.header}
                 </th>
               ))}
@@ -62,20 +62,20 @@ const RepoTable: FC<RepoTableProps> = ({ rows, headers }) => {
                   className="border-b border-gray-200 hover:bg-gray-100 cursor-pointer"
                   onClick={() => toggleRowExpansion(row.id)}
                 >
-                  <td className="py-3 px-6 text-center">
+                  <td className="py-3 pr-0 pl-4 text-center">
                     <button className="text-blue-600 hover:text-blue-800 focus:outline-none">
                       {expandedRowId === row.id ? "-" : "+"}
                     </button>
                   </td>
                   {row.cells.map((cell) => (
-                    <td key={cell.id} className="py-3 px-6">
+                    <td key={cell.id} className="py-3 px-4">
                       {cell.value}
                     </td>
                   ))}
                 </tr>
                 {expandedRowId === row.id && (
-                  <tr className="bg-gray-50">
-                    <td colSpan={headers.length + 1} className="py-3 px-6">
+                  <tr className="bg-gray-100 border-b border-gray-200">
+                    <td colSpan={headers.length + 1} className="py-3 pl-16">
                       <p>{getRowDescription(row.id)}</p>
                     </td>
                   </tr>

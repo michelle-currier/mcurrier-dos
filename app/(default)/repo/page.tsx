@@ -31,7 +31,7 @@ const LinkList: React.FC<{ url: string; homepageUrl?: string | null }> = ({
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50"
+      className="btn w-full bg-gradient-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50"
     >
       GitHub
     </a>
@@ -40,7 +40,7 @@ const LinkList: React.FC<{ url: string; homepageUrl?: string | null }> = ({
         href={homepageUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50"
+        className="btn group mb-4 w-full bg-gradient-to-t from-teal-600 to-teal-500 bg-[length:100%_100%] bg-[bottom] shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto text-white rounded-md focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50"
       >
         Website
       </a>
@@ -52,7 +52,7 @@ const headers: Header[] = [
   { key: "name", header: "Name" },
   { key: "createdAt", header: "Created" },
   { key: "updatedAt", header: "Updated" },
-  { key: "issueCount", header: "Open Issues" },
+  // { key: "issueCount", header: "Open Issues" },
   { key: "stars", header: "Stars" },
   { key: "links", header: "Links" },
 ];
@@ -70,7 +70,7 @@ const getRowItems = (rows: any[]): Row[] =>
         id: `${repo.id}-updatedAt`,
         value: new Date(repo.updated_at).toLocaleDateString(),
       },
-      { id: `${repo.id}-issueCount`, value: repo.open_issues_count.toString() },
+      // { id: `${repo.id}-issueCount`, value: repo.open_issues_count.toString() },
       { id: `${repo.id}-stars`, value: repo.stargazers_count.toString() },
       {
         id: `${repo.id}-links`,
@@ -189,7 +189,7 @@ const Pagination: React.FC<{
       <select
         value={currentPageSize}
         onChange={(e) => onPageChange(1, parseInt(e.target.value))}
-        className="ml-4 p-2 border rounded-md"
+        className="ml-4 p-2 border rounded-md pr-10"
       >
         {[5, 10, 15, 25].map((size) => (
           <option key={size} value={size}>
