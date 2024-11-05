@@ -112,14 +112,16 @@ const RepoPage: React.FC = () => {
 
   if (loading) {
     return (
-      <div className="max-w-6xl w-full mx-auto py-8">
-        <div className="bg-gray-200 animate-pulse h-12 rounded-md"></div>
-        {[...Array(10)].map((_, index) => (
-          <div
-            key={index}
-            className="bg-gray-200 animate-pulse h-8 rounded-md"
-          ></div>
-        ))}
+      <div className="max-w-6xl mx-auto p-8 my-16">
+        <div className="grid grid-cols-1 gap-4">
+          <div className="bg-gray-200 animate-pulse h-12 rounded-md"></div>
+          {[...Array(10)].map((_, index) => (
+            <div
+              key={index}
+              className="bg-gray-200 animate-pulse h-8 rounded-md"
+            ></div>
+          ))}
+        </div>
       </div>
     );
   }
@@ -130,7 +132,7 @@ const RepoPage: React.FC = () => {
 
   return (
     <div className="max-w-6xl w-full mx-auto py-8">
-      <div className="p-4 mt-6">
+      <div className="p-4">
         <RepoTable
           headers={headers}
           rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
