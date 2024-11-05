@@ -15,6 +15,14 @@ export default function Header() {
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
               <Link
+                href="/repo"
+                className="btn-sm bg-white text-gray-800 shadow hover:bg-gray-50"
+              >
+                Repos
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/contact"
                 className="btn-sm bg-white text-gray-800 shadow hover:bg-gray-50"
               >
