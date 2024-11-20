@@ -14,7 +14,7 @@ export default function ResetPassword() {
     <div>
       {/* <div style={styles}> */}
       <div className="mb-10">
-        <h1 className="text-4xl font-bold">Projects</h1>
+        <h1 className="text-4xl font-bold text-indigo-800">Projects</h1>
       </div>
 
       {/* Form */}

@@ -37,7 +37,7 @@ const RepoTable: FC<RepoTableProps> = ({ rows, headers }) => {
 
   return (
     <div className="mx-auto px-4 py-8">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-1">
+      <h2 className="text-2xl text-lime-800 font-semibold mb-1">
         Michelle Currier's Repositories
       </h2>
       <p className="text-gray-600 mb-6">

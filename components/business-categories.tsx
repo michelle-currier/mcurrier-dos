@@ -1,13 +1,13 @@
 import Image from "next/image";
-import Logo01 from "@/public/images/logo-01.svg";
+import Logo01 from "@/public/images/react.svg";
 import Logo02 from "@/public/images/logo-02.svg";
 import Logo03 from "@/public/images/logo-03.svg";
-import Logo04 from "@/public/images/logo-04.svg";
-import Logo05 from "@/public/images/logo-05.svg";
+import Logo04 from "@/public/images/figma-svg.svg";
+import Logo05 from "@/public/images/wordpress-logo.svg";
 import Logo06 from "@/public/images/logo-06.svg";
-import Logo07 from "@/public/images/logo-07.svg";
+import Logo07 from "@/public/images/nodejs-icon.svg";
 import Logo08 from "@/public/images/logo-08.svg";
-import Logo09 from "@/public/images/logo-09.svg";
+import Logo09 from "@/public/images/aws-logo.svg";
 
 export default function BusinessCategories() {
   return (
@@ -180,8 +180,8 @@ export default function BusinessCategories() {
                   <Image
                     className="relative"
                     src={Logo01}
-                    width={32}
-                    height={32}
+                    width={40}
+                    height={40}
                     alt="Logo 01"
                   />
                 </div>
@@ -222,8 +222,8 @@ export default function BusinessCategories() {
                       <Image
                         className="relative"
                         src={Logo04}
-                        width={24}
-                        height={22}
+                        width={32}
+                        height={32}
                         alt="Logo 04"
                       />
                     </div>
@@ -235,8 +235,8 @@ export default function BusinessCategories() {
                       <Image
                         className="relative"
                         src={Logo05}
-                        width={25}
-                        height={25}
+                        width={24}
+                        height={24}
                         alt="Logo 05"
                       />
                     </div>
@@ -268,27 +268,27 @@ export default function BusinessCategories() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute -translate-x-[292px] opacity-40">
+                <div className="absolute -translate-x-[292px]">
                   <div className="animate-[breath_6s_ease-in-out_2s_infinite_both]">
                     <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
                       <Image
                         className="relative"
                         src={Logo08}
-                        width={20}
-                        height={20}
+                        width={24}
+                        height={24}
                         alt="Logo 08"
                       />
                     </div>
                   </div>
                 </div>
-                <div className="absolute translate-x-[292px] opacity-40">
+                <div className="absolute translate-x-[292px]">
                   <div className="animate-[breath_6s_ease-in-out_4s_infinite_both]">
                     <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
                       <Image
                         className="relative"
                         src={Logo09}
-                        width={21}
-                        height={13}
+                        width={24}
+                        height={24}
                         alt="Logo 09"
                       />
                     </div>

@@ -82,12 +82,12 @@ export default function FeaturesPlanet() {
                 >
                   <path d="M2 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4Zm2-4a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4H4Zm1 10a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2H5Z" />
                 </svg>
-                <span>Instant Analytics</span>
+                <span>Mobile Friendly & Responsive</span>
               </h3>
               <p className="text-[15px] text-gray-400">
-                Collect essential insights about how visitors are using your
-                site with in-depth page view metrics like pages, referring
-                sites, and more.
+                The technology is available so lets be sure and utilize it.
+                People use their phones for web browsing now more than ever. We
+                need to make sure you are properly displayed everywhere.
               </p>
             </article>
             <article>
@@ -122,12 +122,11 @@ export default function FeaturesPlanet() {
                   />
                   <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm1.715-6.752a1 1 0 0 1 .57-1.916 8.014 8.014 0 0 1 5.383 5.383 1 1 0 1 1-1.916.57 6.014 6.014 0 0 0-4.037-4.037Zm4.037 7.467a1 1 0 1 1 1.916.57 8.014 8.014 0 0 1-5.383 5.383 1 1 0 1 1-.57-1.916 6.014 6.014 0 0 0 4.037-4.037Zm-7.467 4.037a1 1 0 1 1-.57 1.916 8.014 8.014 0 0 1-5.383-5.383 1 1 0 1 1 1.916-.57 6.014 6.014 0 0 0 4.037 4.037Z" />
                 </svg>
-                <span>SEO &amp; Performance</span>
+                <span>Clean &amp; Clear Design</span>
               </h3>
               <p className="text-[15px] text-gray-400">
-                Collect essential insights about how visitors are using your
-                site with in-depth page view metrics like pages, referring
-                sites, and more.
+                The main goal of a website is convey information. Let me layout
+                a precise clear message to articulate what your business does.
               </p>
             </article>
             <article>
@@ -176,12 +175,13 @@ export default function FeaturesPlanet() {
                 >
                   <path d="M9 1a1 1 0 1 0-2 0v6a1 1 0 0 0 2 0V1ZM4.572 3.08a1 1 0 0 0-1.144-1.64A7.987 7.987 0 0 0 0 8a8 8 0 0 0 16 0c0-2.72-1.36-5.117-3.428-6.56a1 1 0 1 0-1.144 1.64A5.987 5.987 0 0 1 14 8 6 6 0 1 1 2 8a5.987 5.987 0 0 1 2.572-4.92Z" />
                 </svg>
-                <span>Canonical URL</span>
+                <span>Content Management</span>
               </h3>
               <p className="text-[15px] text-gray-400">
-                Collect essential insights about how visitors are using your
-                site with in-depth page view metrics like pages, referring
-                sites, and more.
+                Sometimes we need a little guide to understand how to use these
+                robust and confusing cms’s (content management system). I can
+                make these changes for you and then show you how to do them
+                yourself.
               </p>
             </article>
           </div>
