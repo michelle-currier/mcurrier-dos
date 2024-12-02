@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import PlanetImg from "@/public/images/planet.png";
 import PlanetOverlayImg from "@/public/images/planet-overlay.svg";
 import PlanetTagImg01 from "@/public/images/planet-tag-01.png";
@@ -14,7 +15,14 @@ export default function FeaturesPlanet() {
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-16 text-center md:pb-20">
             <h2 className="text-3xl font-bold text-gray-200 md:text-4xl">
-              Simple helps your teams work more efficiently together
+              <Link
+                href="https://www.tailwindawesome.com/resources/simple-light"
+                target="_blank"
+                className="text-indigo-400 hover:underline animate-pulse"
+              >
+                Simple
+              </Link>{" "}
+              helps you create a website quickly with a template and Vercel.
             </h2>
           </div>
           {/* Planet */}

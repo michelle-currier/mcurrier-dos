@@ -81,11 +81,11 @@ export default function HeroHome() {
                 data-aos-delay={300}
               >
                 Simple is a modern website builder powered by:{" "}
-                <i className="text-indigo-800">
-                  NextJS - (framework), Tailwind - (styles template), AOS -
-                  (animations on scroll), SendGrid - (emails/contact), Vercel -
-                  (deployment).
-                </i>
+                <i className="text-purple-800">NextJS - (framework),</i>{" "}
+                <i className="text-indigo-800">Tailwind - (styles template),</i>{" "}
+                <i className="text-teal-800">AOS - (animations on scroll),</i>{" "}
+                <i className="text-lime-800"> SendGrid - (emails/contact),</i>{" "}
+                <i className="text-yellow-800"> Vercel - (deployment).</i>
               </p>
               <h3
                 className="mb-8 text-3xl text-gray-700"

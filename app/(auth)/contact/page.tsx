@@ -55,7 +55,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="max-w-3xl mx-auto p-6">
+    <section className="max-w-3xl mx-auto p-6 gradient-1 rounded-xl shadow-md">
       <h1 className="text-3xl font-bold text-center text-teal-800 mb-8">
         Contact Us
       </h1>

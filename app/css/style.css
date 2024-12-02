@@ -7,3 +7,8 @@
 @import "additional-styles/theme.css";
 
 @import "tailwindcss/utilities";
+
+.gradient-1 {
+    background-color: #f3f8ff;
+background-image: radial-gradient(at 26% 27%, #f3f8ff 0%, transparent 60%), radial-gradient(at 40% 92%, #e9a2ec 0%, transparent 50%), radial-gradient(at 29% 5%, #d9c9ed 0%, transparent 40%), radial-gradient(at 69% 8%, #c0a1e4 0%, transparent 30%);
+}

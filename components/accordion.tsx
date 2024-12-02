@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
-
+import Image, { StaticImageData } from "next/image";
 type AccordionpProps = {
   children: React.ReactNode;
   title: string;
   id: string;
+  image?: StaticImageData | string;
   active?: boolean;
 };
 
@@ -13,6 +14,7 @@ export default function Accordion({
   children,
   title,
   id,
+  image,
   active = false,
 }: AccordionpProps) {
   const [accordionOpen, setAccordionOpen] = useState<boolean>(active);
@@ -29,7 +31,23 @@ export default function Accordion({
           aria-expanded={accordionOpen}
           aria-controls={`accordion-text-${id}`}
         >
-          <span>{title}</span>
+          <div className="flex items-center space-x-4">
+            <span>{title}</span>
+            {image &&
+              (typeof image === "string" ? (
+                <img
+                  src={image}
+                  alt={title}
+                  className="h-10 w-10 rounded-md object-cover"
+                />
+              ) : (
+                <Image
+                  src={image}
+                  alt={title}
+                  className="h-10 w-10 rounded-md object-cover"
+                />
+              ))}
+          </div>
           <span className="ml-8 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white shadow-sm">
             <svg
               className={`origin-center transform fill-gray-400 transition duration-200 ease-out ${accordionOpen && "!rotate-180"}`}
@@ -53,7 +71,7 @@ export default function Accordion({
         className={`grid overflow-hidden text-sm text-gray-600 transition-all duration-300 ease-in-out ${accordionOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
       >
         <div className="overflow-hidden">
-          <p className="px-4 pb-3">{children}</p>
+          <div className="px-4 pb-3">{children}</div>
         </div>
       </div>
     </div>
