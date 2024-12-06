@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Stripes from "@/public/images/stripes-dark.svg";
-
+import Link from "next/link";
 export default function Cta() {
   return (
     <section>
@@ -47,6 +47,26 @@ export default function Cta() {
                 </span>
               </a>
             </div>
+            <p
+              className="mt-8 text-lg text-gray-400"
+              data-aos="zoom-y-out"
+              data-aos-delay={300}
+            >
+              This site uses the{" "}
+              <Link
+                href="https://www.tailwindawesome.com/resources/simple-light"
+                target="_blank"
+                className="text-indigo-400 hover:underline animate-pulse"
+              >
+                Simple
+              </Link>{" "}
+              template and is powered by:{" "}
+              <i className="text-purple-500">NextJS - (framework),</i>{" "}
+              <i className="text-indigo-500">Tailwind - (styles template),</i>{" "}
+              <i className="text-teal-500">AOS - (animations on scroll),</i>{" "}
+              <i className="text-lime-500"> SendGrid - (emails/contact),</i>{" "}
+              <i className="text-yellow-500"> Vercel - (deployment).</i>
+            </p>
           </div>
         </div>
       </div>

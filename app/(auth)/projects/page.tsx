@@ -20,7 +20,7 @@ import Logo09 from "./../../../public/images/aws-logo.svg";
 
 export default function ResetPassword() {
   return (
-    <div>
+    <div className="w-full">
       {/* <div style={styles}> */}
       <div className="mb-10">
         <h1 className="text-4xl font-bold text-center text-indigo-800 border-y [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">

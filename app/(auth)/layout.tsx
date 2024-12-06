@@ -32,7 +32,7 @@ export default function AuthLayout({
         <div className="w-full">
           <div className="flex h-full flex-col justify-center before:min-h-[4rem] before:flex-1 after:flex-1 md:before:min-h-[5rem]">
             <div className="px-4 sm:px-6">
-              <div className="mx-auto w-full max-w-sm">
+              <div className="mx-auto w-full max-w-lg">
                 <div className="py-16 md:py-20">{children}</div>
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function AuthLayout({
 
         <>
           {/* Right side */}
-          <div className="relative my-6 mr-6 hidden w-[572px] shrink-0 overflow-hidden rounded-2xl lg:block">
+          <div className="relative my-6 mr-6 hidden w-[550px] shrink-0 overflow-hidden rounded-2xl lg:block">
             {/* Background */}
             <div
               className="pointer-events-none absolute left-1/2 top-1/2 -z-10 -ml-24 -translate-x-1/2 -translate-y-1/2 bg-blue-50"

@@ -16,6 +16,7 @@ export default function Logo() {
         width={32}
         height={32}
       ></Image>{" "}
+      {/* <span className="text-indigo-800 font-bold text-2xl">m.&nbsp;</span> */}
       <p className="text-indigo-800 mt-1">currier designs</p>
     </Link>
   );

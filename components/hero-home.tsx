@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import PageIllustration from "@/components/page-illustration";
 import Avatar01 from "@/public/images/avatar-01.jpg";
 import Avatar02 from "@/public/images/avatar-02.jpg";
@@ -72,28 +73,22 @@ export default function HeroHome() {
               data-aos-delay={150}
             >
               The website builder you're <br className="max-lg:hidden" />
-              looking for
+              looking for.
             </h1>
+            <h3 className="mb-6 border-y text-3xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-3xl text-teal-800">
+              Modern, responsive, and user-focused web solutions tailored for
+              your business.
+            </h3>
             <div className="mx-auto max-w-3xl">
-              <p
-                className="mb-8 text-lg text-gray-700"
-                data-aos="zoom-y-out"
-                data-aos-delay={300}
-              >
-                Simple is a modern website builder powered by:{" "}
-                <i className="text-purple-800">NextJS - (framework),</i>{" "}
-                <i className="text-indigo-800">Tailwind - (styles template),</i>{" "}
-                <i className="text-teal-800">AOS - (animations on scroll),</i>{" "}
-                <i className="text-lime-800"> SendGrid - (emails/contact),</i>{" "}
-                <i className="text-yellow-800"> Vercel - (deployment).</i>
-              </p>
               <h3
-                className="mb-8 text-3xl text-gray-700"
+                className="mb-8 text-2xl text-gray-700"
                 data-aos="zoom-y-out"
                 data-aos-delay={450}
               >
                 Collaborating with m. currier designs changes how companies
-                create intiuitive user interfaces together.
+                create intiuitive user interfaces together. I work with loads of
+                technologies and have over 14 years of hand's-on experience with
+                web design.
               </h3>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
                 <div
@@ -114,9 +109,10 @@ export default function HeroHome() {
                   </a>
                   <a
                     className="btn w-full bg-white text-gray-800 shadow hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="#0"
+                    href="https://www.tailwindawesome.com/resources/simple-light"
+                    target="_blank"
                   >
-                    Learn More
+                    Learn More about Simple
                   </a>
                 </div>
               </div>
