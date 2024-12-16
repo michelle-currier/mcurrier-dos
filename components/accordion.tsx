@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image, { StaticImageData } from "next/image";
-type AccordionpProps = {
+type AccordionProps = {
   children: React.ReactNode;
   title: string;
   id: string;
@@ -16,7 +16,7 @@ export default function Accordion({
   id,
   image,
   active = false,
-}: AccordionpProps) {
+}: AccordionProps) {
   const [accordionOpen, setAccordionOpen] = useState<boolean>(active);
 
   return (

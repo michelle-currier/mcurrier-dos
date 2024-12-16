@@ -108,11 +108,11 @@ export default function HeroHome() {
                     </span>
                   </a>
                   <a
-                    className="btn w-full bg-white text-gray-800 shadow hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="https://www.tailwindawesome.com/resources/simple-light"
+                    className="btn w-full bg-white text-gray-800 shadow hover:bg-blue-200 sm:ml-4 sm:w-auto"
+                    href="/services"
                     target="_blank"
                   >
-                    Learn More about Simple
+                    Learn More about our Services
                   </a>
                 </div>
               </div>

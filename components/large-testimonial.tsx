@@ -65,7 +65,7 @@ export default function LargeTestimonial() {
                 target="_blank"
                 aria-label="https://thenicenotaryllc.com"
               >
-                Owner The Nice Notary LLC
+                Owner: The Nice Notary LLC
               </a>
             </div>
           </div>
