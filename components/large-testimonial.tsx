@@ -30,18 +30,42 @@ export default function LargeTestimonial() {
               />
             </div>
             <p className="text-2xl font-bold text-gray-900">
-              “Vercel and NextJS templates like Simple have speed up my website
-              creation. From easy use of tailwind for styles to{" "}
-              <em className="italic text-gray-500">
-                smooth scrolling transitions with aos
-              </em>
-              , it's become my go-to template for small businesses.”
+              Michelle at M. Currier Designs was a pleasure to work with, I
+              highly recommend her services as a website builder.{" "}
             </p>
-            <div className="text-sm font-medium text-gray-500">
-              <span className="text-gray-700">Michelle Currier</span>{" "}
+            <p>
+              I was paying way too much through{" "}
+              <em className="italic text-yellow-600">Squarespace</em> because my
+              site was designed using their interface, I was using it to
+              maintain my domain and also my site itself. M. Currier Designs was
+              able to quickly build me a much better site and move it off of
+              Squarespace to avoid the monthly fees. She was super attentive and
+              responsive to my emails changing various details I wanted to add
+              to the site. She gave the site new features I didn't have on the
+              boring Squarespace site, like contact me fields that will generate
+              an email to my inbox, and security, now it's https, making it
+              easier to search for and find as well as making clients feel
+              safer.
+            </p>
+            <p>
+              <span className="italic text-indigo-600 text-lg">
+                Having a professionally built site is well worth it,
+              </span>{" "}
+              it reflects on my business and the level of competence and
+              steadiness I want to present to prospective clients. I love my new
+              site and I can't be happier about the money I will save in the
+              long run. So happy I did this!{" "}
+            </p>
+            <div className="text-md font-medium text-gray-500">
+              <span className="text-gray-700">Margaret Dufoure</span>{" "}
               <span className="text-gray-400">/</span>{" "}
-              <a className="text-blue-500" href="#0">
-                Found m. currier designs
+              <a
+                className="text-blue-500"
+                href="https://thenicenotaryllc.com"
+                target="_blank"
+                aria-label="https://thenicenotaryllc.com"
+              >
+                Owner The Nice Notary LLC
               </a>
             </div>
           </div>
