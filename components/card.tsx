@@ -60,13 +60,13 @@ export default function Card({
         </ul>
       )}
       {logos.length > 0 && (
-        <div className="flex flex-wrap items-center gap-2 mb-4">
+        <div className="flex flex-wrap items-center gap-2 my-4">
           {logos.map((logo, index) => (
             <Image
               key={index}
               src={logo}
               alt={`Logo ${index + 1}`}
-              className="h-10 w-10 object-contain"
+              className="h-11 w-11 object-contain pr-2"
             />
           ))}
         </div>

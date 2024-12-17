@@ -21,7 +21,7 @@ import AWSLogo from "./../../../public/images/aws-logo.svg";
 
 export default function ResetPassword() {
   return (
-    <div className="mt-20 max-w-6xl mx-auto">
+    <div className="mt-20 max-w-6xl mx-auto px-6">
       {/* <div style={styles}> */}
       <div className="mb-10">
         <h1 className="text-4xl font-bold text-center text-indigo-800 border-y [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
@@ -29,7 +29,7 @@ export default function ResetPassword() {
         </h1>
       </div>
 
-      <div className="flex flex-row justify-around items-start mx-auto space-y-4">
+      <div className="grid grid-cols-3 mx-auto gap-4">
         <Card
           title="Basic Site"
           price="($450 - $900)"
