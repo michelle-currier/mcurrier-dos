@@ -29,7 +29,7 @@ export default function ResetPassword() {
         </h1>
       </div>
 
-      <div className="grid grid-cols-3 mx-auto gap-4">
+      <div className="grid grid-cols-3 mx-auto gap-4 mb-8">
         <Card
           title="Basic Site"
           price="($450 - $900)"

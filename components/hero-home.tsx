@@ -73,11 +73,12 @@ export default function HeroHome() {
               data-aos-delay={150}
             >
               The website builder you're <br className="max-lg:hidden" />
-              looking for.
+              looking for!
             </h1>
             <h3 className="mb-6 border-y text-3xl font-bold [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] md:text-3xl text-teal-800">
-              Modern, responsive, and user-focused web solutions tailored for
-              your business.
+              Modern, responsive, and user-focused{" "}
+              <br className="max-md:hidden" />
+              web solutions tailored for your business.
             </h3>
             <div className="mx-auto max-w-3xl">
               <h3
@@ -108,11 +109,11 @@ export default function HeroHome() {
                     </span>
                   </a>
                   <a
-                    className="btn w-full bg-white text-gray-800 shadow hover:bg-blue-200 sm:ml-4 sm:w-auto"
+                    className="btn w-full bg-gradient-to-t from-teal-600 to-teal-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto font-bold ml-4"
                     href="/services"
                     target="_blank"
                   >
-                    Learn More about our Services
+                    Learn more about our services
                   </a>
                 </div>
               </div>

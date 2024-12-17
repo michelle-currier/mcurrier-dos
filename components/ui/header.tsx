@@ -16,7 +16,7 @@ export default function Header() {
             <li>
               <Link
                 href="/repo"
-                className="btn-sm bg-white text-lime-800 shadow hover:bg-slate-100 hover:border-2 hover:border-lime-500 focus:ring-2 focus:ring-lime-400 focus:ring-opacity-50 ease-in"
+                className="btn-sm border-2 border-transparent bg-white text-lime-800 shadow hover:bg-slate-100 hover:border-2 hover:border-lime-500 focus:ring-2 focus:ring-lime-400 focus:ring-opacity-50 ease-in"
               >
                 Repos
               </Link>
@@ -24,7 +24,7 @@ export default function Header() {
             <li>
               <Link
                 href="/contact"
-                className="btn-sm bg-white text-teal-800 shadow hover:bg-slate-100 hover:border-2 hover:border-teal-500 focus:ring-2 focus:ring-teal-400 focus:ring-opacity-50 ease-in"
+                className="btn-sm border-2 border-transparent bg-white text-teal-800 shadow hover:bg-slate-100 hover:border-2 hover:border-teal-500 focus:ring-2 focus:ring-teal-400 focus:ring-opacity-50 ease-in"
               >
                 Contact
               </Link>
@@ -32,7 +32,7 @@ export default function Header() {
             <li>
               <Link
                 href="/projects"
-                className="btn-sm bg-white text-blue-800 shadow hover:bg-slate-100 hover:border-2 hover:border-blue-500 focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 ease-in"
+                className="btn-sm border-2 border-transparent bg-white text-blue-800 shadow hover:bg-slate-100 hover:border-2 hover:border-blue-500 focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 ease-in"
               >
                 Projects
               </Link>

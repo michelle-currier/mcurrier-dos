@@ -56,7 +56,7 @@ export default function Contact() {
 
   return (
     <section className="max-w-3xl mx-auto p-6 gradient-1 rounded-xl shadow-md">
-      <h1 className="text-3xl font-bold text-center text-teal-800 mb-8">
+      <h1 className="text-3xl font-bold text-center text-teal-800 mb-8 border-y [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
         Contact Us
       </h1>
       <form onSubmit={handleSubmit} className="space-y-6">
