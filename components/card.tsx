@@ -30,7 +30,7 @@ export default function Card({
   services = [],
 }: CardProps) {
   return (
-    <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
+    <div className="max-w-sm mx-auto p-6 bg-white border border-gray-200 rounded-lg shadow">
       {/* {image &&
         (typeof image === "string" ? (
           <img

@@ -24,12 +24,12 @@ export default function ResetPassword() {
     <div className="mt-20 max-w-6xl mx-auto px-6">
       {/* <div style={styles}> */}
       <div className="mb-10">
-        <h1 className="text-4xl font-bold text-center text-indigo-800 border-y [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
+        <h1 className="text-4xl font-bold text-center text-purple-800 border-y [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
           Services
         </h1>
       </div>
 
-      <div className="grid grid-cols-3 mx-auto gap-4 mb-8">
+      <div className="md:grid flex flex-col justify-center mx-auto gap-4 mb-8 md:grid-cols-3">
         <Card
           title="Basic Site"
           price="($450 - $900)"
@@ -79,6 +79,19 @@ export default function ResetPassword() {
             "Scheduler & Booking Systems",
           ]}
         ></Card>
+        <div className="flex mx-auto">
+          <a
+            className="btn group mb-4 w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
+            href="/contact"
+          >
+            <span className="relative inline-flex items-center text-xl">
+              Contact me to get started today!{" "}
+              <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
+                -&gt;
+              </span>
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   );

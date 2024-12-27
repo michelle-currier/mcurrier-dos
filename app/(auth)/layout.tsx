@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Logo from "@/components/ui/logo";
 import AuthBg from "@/public/images/auth-bg.svg";
-
+import Footer from "@/components/ui/footer";
 export default function AuthLayout({
   children,
 }: {
@@ -98,6 +98,7 @@ export default function AuthLayout({
           </div>
         </>
       </main>
+      <Footer />
     </>
   );
 }

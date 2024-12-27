@@ -1,7 +1,9 @@
 import Link from "next/link";
 import Logo from "./logo";
+import { useState } from "react";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <header className="fixed z-30 w-full md:top-1 sm:top-0">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -10,9 +12,15 @@ export default function Header() {
           <div className="flex flex-1 items-center text-lg">
             <Logo />
           </div>
-
+          {/* Mobile menu button */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="block md:hidden btn-sm border-2 border-transparent bg-white text-gray-800 shadow hover:bg-slate-100 hover:border-gray-500 focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50"
+          >
+            Menu
+          </button>
           {/* Desktop sign in links */}
-          <ul className="flex flex-1 items-center justify-end gap-3">
+          <ul className="hidden md:flex flex-1 items-center justify-end gap-3">
             <li>
               <Link
                 href="/repo"
@@ -37,24 +45,59 @@ export default function Header() {
                 Projects
               </Link>
             </li>
-            {/* <li>
-              <Link
-                href="/signin"
-                className="btn-sm bg-white text-gray-800 shadow hover:bg-gray-50"
-              >
-                Login
-              </Link>
-            </li>
             <li>
               <Link
-                href="/signup"
-                className="btn-sm bg-gray-800 text-gray-200 shadow hover:bg-gray-900"
+                href="/services"
+                className="btn-sm border-2 border-transparent bg-white text-purple-800 shadow hover:bg-slate-100 hover:border-2 hover:border-purple-500 focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50 ease-in"
               >
-                Register
+                Services
               </Link>
-            </li> */}
+            </li>
           </ul>
         </div>
+        {/* Mobile navigation */}
+        {isMenuOpen && (
+          <div className="absolute top-full left-0 w-full bg-white shadow-lg md:hidden">
+            <ul className="flex flex-col items-start gap-3 p-4">
+              <li>
+                <Link
+                  href="/repo"
+                  className="block w-full text-left btn-sm border-2 border-transparent bg-white text-lime-800 shadow hover:bg-slate-100 hover:border-2 hover:border-lime-500 focus:ring-2 focus:ring-lime-400 focus:ring-opacity-50 ease-in"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Repos
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="block w-full text-left btn-sm border-2 border-transparent bg-white text-teal-800 shadow hover:bg-slate-100 hover:border-2 hover:border-teal-500 focus:ring-2 focus:ring-teal-400 focus:ring-opacity-50 ease-in"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/projects"
+                  className="block w-full text-left btn-sm border-2 border-transparent bg-white text-blue-800 shadow hover:bg-slate-100 hover:border-2 hover:border-blue-500 focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 ease-in"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="block w-full text-left btn-sm border-2 border-transparent bg-white text-purple-800 shadow hover:bg-slate-100 hover:border-2 hover:border-purple-500 focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50 ease-in"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Services
+                </Link>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
     </header>
   );
