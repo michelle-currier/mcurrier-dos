@@ -19,7 +19,7 @@ import NodeJSLogo from "./../../../public/images/nodejs-icon.svg";
 import NextJSLogo from "./../../../public/images/logo-08.svg";
 import AWSLogo from "./../../../public/images/aws-logo.svg";
 
-export default function ResetPassword() {
+export default function ServicesPage() {
   return (
     <div className="mt-20 max-w-6xl mx-auto px-6">
       {/* <div style={styles}> */}

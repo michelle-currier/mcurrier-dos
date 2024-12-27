@@ -18,7 +18,7 @@ import Logo07 from "./../../../public/images/nodejs-icon.svg";
 import Logo08 from "./../../../public/images/logo-08.svg";
 import Logo09 from "./../../../public/images/aws-logo.svg";
 
-export default function ResetPassword() {
+export default function ProjectsPage() {
   return (
     <div className="w-full">
       {/* <div style={styles}> */}
