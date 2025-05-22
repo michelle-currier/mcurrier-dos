@@ -84,7 +84,7 @@ export default function ProjectsPage() {
               <i>Client:</i>
             </b>{" "}
             <Link
-              href="https://the-nice-notary.vercel.app/"
+              href="https://thenicenotaryllc.com/"
               target="_blank"
               aria-label="thenicenotaryllc.com"
               className="font-bold text-blue-800 hover:text-teal-800 hover:cursor-pointer"
@@ -109,13 +109,45 @@ export default function ProjectsPage() {
               Github.
             </li>
           </ul>
+        </Accordion>
+        <Accordion title="DF Construction Services" id="tres" image={Logo01}>
+          <p className="leading-6">
+            <b>
+              <i>Client:</i>
+            </b>{" "}
+            <Link
+              href="https://df-constructionservices.com/"
+              target="_blank"
+              aria-label="df-constructionservices.com"
+              className="font-bold text-blue-800 hover:text-teal-800 hover:cursor-pointer"
+            >
+              DF Construction Services
+            </Link>{" "}
+            (Building Strong Foundations, Clearing New Paths.){" "}
+          </p>
+          <p className="leading-6 mb-3">
+            <i>Project Scope:</i> Development of a website for information about
+            their services, rates, and a contact form.
+          </p>
+          <ul className="pt-3 border-t [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
+            <li className="font-bold">Key Deliverables:</li>
+            <li>
+              <b>Contact Form:</b> Utilizing SendGrid and some best practices
+              with error checks and responses on send.
+            </li>
+            <li>
+              <b>React + Vercel:</b> Rapid creation and deployment with my small
+              business template and streamlined deployment using Vercel and
+              Github.
+            </li>
+          </ul>
           <Link
-            href="https://the-nice-notary.vercel.app/"
+            href="https://df-constructionservices.com/"
             target="_blank"
             aria-label="thenicenotaryllc.com"
             className="font-bold text-blue-800 hover:text-teal-800 hover:cursor-pointer"
           >
-            The Nice Notary
+            DF Construction Services
           </Link>
         </Accordion>
       </div>
