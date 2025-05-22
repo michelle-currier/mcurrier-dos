@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
     // Create the email options
     const emailData = {
       to: "mcurrierdesigns@gmail.com", // Your email where you want to receive messages
-      from: `Design.mcurrier.com`, // Sender's email
+      from: `${email}`, // Sender's email
       subject: `Contact inquiry from ${name}`,
       text: message,
       html: `
@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
     await sendgrid.send(emailData);
 
     // Return a successful response
-    return NextResponse.json({ message: "Email sent successfully!" }, { status: 200 });
+    return NextResponse.json({ message: "Email sent successfully!" }, { status: 200 },);
   } catch (error) {
     console.error("Error sending email:", error);
     // Return an error response
