@@ -1,12 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import PageIllustration from "@/components/page-illustration";
-import Avatar01 from "@/public/images/avatar-01.jpg";
-import Avatar02 from "@/public/images/avatar-02.jpg";
-import Avatar03 from "@/public/images/avatar-03.jpg";
-import Avatar04 from "@/public/images/avatar-04.jpg";
-import Avatar05 from "@/public/images/avatar-05.jpg";
-import Avatar06 from "@/public/images/avatar-06.jpg";
+// import Avatar01 from "@/public/images/avatar-01.jpg";
+// import Avatar02 from "@/public/images/avatar-02.jpg";
+// import Avatar03 from "@/public/images/avatar-03.jpg";
+// import Avatar04 from "@/public/images/avatar-04.jpg";
+// import Avatar05 from "@/public/images/avatar-05.jpg";
+// import Avatar06 from "@/public/images/avatar-06.jpg";
+
+import Logo01 from "@/public/images/react.svg";
+import Logo02 from "@/public/images/logo-02.svg";
+import Logo03 from "@/public/images/logo-03.svg";
+import Logo04 from "@/public/images/figma-svg.svg";
+import Logo05 from "@/public/images/wordpress-logo.svg";
+import Logo06 from "@/public/images/logo-06.svg";
+import Logo07 from "@/public/images/nodejs-icon.svg";
+import Logo08 from "@/public/images/logo-08.svg";
 
 export default function HeroHome() {
   return (
@@ -21,48 +30,49 @@ export default function HeroHome() {
               className="mb-6 border-y [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]"
               data-aos="zoom-y-out"
             >
-              <div className="-mx-0.5 flex justify-center -space-x-3">
+              <div className="-mx-0.5 flex justify-center space-x-2">
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar01}
+                  src={Logo01}
                   width={32}
                   height={32}
-                  alt="Avatar 01"
+                  alt="React"
                 />
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar02}
+                  src={Logo02}
                   width={32}
                   height={32}
-                  alt="Avatar 01"
+                  alt="GitHub"
                 />
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar03}
+                  src={Logo03}
                   width={32}
                   height={32}
-                  alt="Avatar 02"
+                  alt="Google APIs"
                 />
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar04}
+                  src={Logo04}
                   width={32}
                   height={32}
-                  alt="Avatar 03"
+                  alt="Figma"
+                />
+
+                <Image
+                  className="box-content rounded-full border-2 border-gray-50"
+                  src={Logo07}
+                  width={32}
+                  height={32}
+                  alt="Javascript"
                 />
                 <Image
                   className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar05}
+                  src={Logo08}
                   width={32}
                   height={32}
-                  alt="Avatar 04"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar06}
-                  width={32}
-                  height={32}
-                  alt="Avatar 05"
+                  alt="NextJS"
                 />
               </div>
             </div>
